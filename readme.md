@@ -3,6 +3,7 @@
 
 * [Python3 Download](https://www.python.org/downloads/release/python-370/)
 * [Python Language Reference](https://docs.python.org/3/tutorial/classes.html)
+* [Python variables as pointers](http://scottlobdell.me/2013/08/understanding-python-variables-as-pointers/)
 
 ```
 

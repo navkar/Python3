@@ -21,25 +21,26 @@ Hello
 ## What does if \_\_name\_\_== "\_\_main\_\_" do?
 Consider the following lines of code...
 
+### Foo.py
 ```
 print __name__
 if __name__ == '__main__':
     print 'XXXX'
 ```
 
-A file code.py can be used in the following two ways...
+File foo.py can be used in the following two ways...
 
 ### imported in another file : 
 ```
 import foo
 ```
 
-In this case \_\_name\_\_ is foo, the code section does not get executed and does not print XXXX.
+In this case \_\_name\_\_ is foo, the code section does not execute and will not print XXXX.
 
 ### executed directly : 
 ```
 python foo.py
 ```
 
-* When it is executed directly, \_\_name\_\_ is same as \_\_main\_\_ and the code in that section is executed and prints XXXX
-* One use of this functionality to write various kind of unit tests within the same module.
+* When it is executed directly, \_\_name\_\_ is same as \_\_main\_\_ and the code in that section executes and prints XXXX
+* One can write various unit tests within the same module.

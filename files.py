@@ -10,6 +10,7 @@ def main():
     f = open("newfile.txt", "r")
     if (f.mode == 'r'):
         contents = f.read()
+        # f.readlines()
         print(contents)
 
 

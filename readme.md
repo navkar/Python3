@@ -1,7 +1,8 @@
 
 # Python3 interpreter on a Mac
 
-[Python3 Download] (https://www.python.org/downloads/release/python-370/)
+* [Python3 Download](https://www.python.org/downloads/release/python-370/)
+
 
 ```
 

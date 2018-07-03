@@ -5,6 +5,7 @@
 * [Python Language Reference](https://docs.python.org/3/tutorial/classes.html)
 * [Python variables as pointers](http://scottlobdell.me/2013/08/understanding-python-variables-as-pointers/)
 * [USGS Json](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
+* [Python JSON Reference](https://docs.python.org/3/library/json.html)
 
 ```
 

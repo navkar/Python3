@@ -7,6 +7,10 @@ def printResults(data):
     if "title" in theJSON["metadata"]:
         print(theJSON["metadata"]["title"])
 
+    for record in theJSON["features"]:
+        if record["properties"]["mag"] >= 4.0:
+            print("%2.1f" % record["properties"]["mag"], record["properties"]["place"])
+    print("--------------------------------------\r\n")
 
 def smain():
     webUrl = urllib.request.urlopen("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson")

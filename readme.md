@@ -52,8 +52,20 @@ python foo.py
 
 [list-comprehensions](http://blog.cdleary.com/2010/04/learning-python-by-example-list-comprehensions/)
 
+Syntax : **result** = [**transform**  **iteration**  **filter** ]
+
+#### Creates a new list with the lengths of each of the items 
 ```
-fru_len=[len(item) for item in fruits]
+fruits = ['apple', 'mango', 'kiwi', 'watermelon', 'pear']
+list_len=[len(item) for item in fruits]
+In [1]: list_len
+Out[1]: [5, 5, 4, 10, 4]
+```
+
+#### Find fruits starting with letter 'a' in the list of fruits and create a new list 
+```
+fruits = ['apple', 'mango', 'kiwi', 'watermelon', 'pear']
+find_apple = [item for item in list if item.startswith('a')]
 ```
 
 

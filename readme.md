@@ -1,15 +1,22 @@
+## Interactive Python from Browsers
 
-# Python3 interpreter on a Mac
+* [Ipython](https://www.pythonanywhere.com/try-ipython/)
+* [Jupyter](https://jupyter.org/try)
 
-* [Python3 Download](https://www.python.org/downloads/release/python-370/)
+## Python reference
+
 * [Python Language Reference](https://docs.python.org/3/tutorial/classes.html)
-* [Python variables as pointers](http://scottlobdell.me/2013/08/understanding-python-variables-as-pointers/)
-* [USGS Json](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 * [Python JSON Reference](https://docs.python.org/3/library/json.html)
 * [NumPy reference](https://docs.scipy.org/doc/numpy/reference/)
 
-```
+## Python3 interpreter on a Mac
 
+* [Python3 Download](https://www.python.org/downloads/release/python-370/)
+* [Python variables as pointers](http://scottlobdell.me/2013/08/understanding-python-variables-as-pointers/)
+* [USGS Json](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
+
+
+```
 Naveens-MacBook-Pro:~ navkar$ python3
 Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24) 
 [Clang 6.0 (clang-600.0.57)] on darwin

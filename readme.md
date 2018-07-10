@@ -80,6 +80,13 @@ find_apple = [item for item in list if item.startswith('a')]
 %show sample_script.py
 ```
 
+#### Magic command %hist - history of commands
 
+```
+%hist
+```
 
+### What is the input of a cell magic method ?
+
++ Python code written in multiple lines of a single cell.
 

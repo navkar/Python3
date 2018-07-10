@@ -47,3 +47,15 @@ python foo.py
 
 * When it is executed directly, \_\_name\_\_ is same as \_\_main\_\_ and the code in that section executes and prints XXXX
 * One can write various unit tests within the same module.
+
+### List comprehensions
+
+[list-comprehensions](http://blog.cdleary.com/2010/04/learning-python-by-example-list-comprehensions/)
+
+```
+fru_len=[len(item) for item in fruits]
+```
+
+
+
+

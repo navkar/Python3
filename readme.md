@@ -68,6 +68,18 @@ fruits = ['apple', 'mango', 'kiwi', 'watermelon', 'pear']
 find_apple = [item for item in list if item.startswith('a')]
 ```
 
+#### Magic command %save - saves the previous list of commands in a file
+
+```
+%save sample_script.py 1-6
+```
+
+#### Magic command %more - view the contents of a file
+
+```
+%show sample_script.py
+```
+
 
 
 

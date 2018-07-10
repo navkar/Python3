@@ -16,7 +16,7 @@
 * [USGS Json](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 
 
-```
+```bash
 Naveens-MacBook-Pro:~ navkar$ python3
 Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24) 
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -33,7 +33,7 @@ Hello
 Consider the following lines of code...
 
 ### Foo.py
-```
+```python
 print __name__
 if __name__ == '__main__':
     print 'XXXX'
@@ -42,14 +42,14 @@ if __name__ == '__main__':
 File foo.py can be used in the following two ways...
 
 ### imported in another file : 
-```
+```python
 import foo
 ```
 
 In this case \_\_name\_\_ is foo, the code section does not execute and will not print XXXX.
 
 ### executed directly : 
-```
+```python
 python foo.py
 ```
 
@@ -63,7 +63,7 @@ python foo.py
 Syntax : **result** = [**transform**  **iteration**  **filter** ]
 
 #### Creates a new list with the lengths of each of the items 
-```
+```python
 fruits = ['apple', 'mango', 'kiwi', 'watermelon', 'pear']
 list_len=[len(item) for item in fruits]
 In [1]: list_len
@@ -71,26 +71,26 @@ Out[1]: [5, 5, 4, 10, 4]
 ```
 
 #### Find fruits starting with letter 'a' in the list of fruits and create a new list 
-```
+```python
 fruits = ['apple', 'mango', 'kiwi', 'watermelon', 'pear']
 find_apple = [item for item in list if item.startswith('a')]
 ```
 
 #### Magic command %save - saves the previous list of commands in a file
 
-```
+```python
 %save sample_script.py 1-6
 ```
 
 #### Magic command %more - view the contents of a file
 
-```
+```python
 %show sample_script.py
 ```
 
 #### Magic command %hist - history of commands
 
-```
+```python
 %hist
 ```
 
@@ -103,7 +103,7 @@ find_apple = [item for item in list if item.startswith('a')]
 * A Generator object is an iterator, whose values are created at the time of accessing them.
 * A generator can be obtained either from a generator expression or a generator function.
 
-```
+```python
 x = [6, 3, 1]
 g = (i**2 for i in x)  # generator expression
 print(next(g))         # -> 36

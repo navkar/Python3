@@ -137,6 +137,10 @@ print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
 * Each class or a method definition can have an optional first line, known as docstring.
 * Once documented, you can load the script into an interactive interpreter and run help command on Person class.
 
+## Generator functions
+
+[improve-your-python-yield-and-generators](https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
+
 ## Inheritance
 
 * In Python, every class uses inheritance and is inherited from **object** by default.

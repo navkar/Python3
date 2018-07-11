@@ -127,6 +127,13 @@ class Person:
 p1 = Person('George', 'Smith')   
 print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
 ```
+
+## Which of the following statement retreives names of all builtin module names?
+
+* The compiled-in module names are in **sys.builtin_module_names**
+
+## What does \_\_doc\_\_ do?
+
 * Each class or a method definition can have an optional first line, known as docstring.
 * Once documented, you can load the script into an interactive interpreter and run help command on Person class.
 

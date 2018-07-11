@@ -240,5 +240,8 @@ print ExampleSibling
 print ExampleSibling.__mro__
 ```
 
+## pass keyword
+
+In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty. With pass, we indicate a "null" block. Pass can be placed on the same line, or on a separate line. Pass can be used to quickly add things that are unimplemented.
 
 

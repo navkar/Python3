@@ -111,8 +111,15 @@ print(next(g))         # -> 36
 
 ## What does \_\_init\_\_ do?
 
+* Set multiple attributes, at once, by defining the initializer method, \_\_init\_\_ , inside the class.
+* This method is called by default, during an object creation.
+* It takes values passed inside the parenthesis, during an object creation, as it's arguments.
+* It also takes self as the first argument, which refers to the current object.
+
 ```python
+'This is known as a docstring'
 class Person:
+    'Initialises two attributes of a person.'
     def __init__(self, fname, lname):
         self.fname = fname
         self.lname = lname
@@ -120,6 +127,28 @@ class Person:
 p1 = Person('George', 'Smith')   
 print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
 ```
+* Each class or a method definition can have an optional first line, known as docstring.
+* Once documented, you can load the script into an interactive interpreter and run help command on Person class.
 
+## Inheritance
 
+* In Python, every class uses inheritance and is inherited from **object** by default.
+
+```python
+class Person:
+    def __init__(self, fname, lname):
+        self.fname = fname
+        self.lname = lname
+
+class Employee(Person):
+    all_employees = []
+
+    def __init__(self, fname, lname, empid):
+        Person.__init__(self, fname, lname)
+        self.empid = empid
+        Employee.all_employees.append(self)
+
+```
+
+* In above example, Employee class utilises \_\_init\_\_ method of parent class Person, to create the object.
 

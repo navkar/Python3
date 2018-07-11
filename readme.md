@@ -109,6 +109,17 @@ g = (i**2 for i in x)  # generator expression
 print(next(g))         # -> 36
 ```
 
+## What does \_\_init\_\_ do?
+
+```python
+class Person:
+    def __init__(self, fname, lname):
+        self.fname = fname
+        self.lname = lname
+
+p1 = Person('George', 'Smith')   
+print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
+```
 
 
 

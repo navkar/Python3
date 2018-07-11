@@ -42,6 +42,10 @@ yield
 
 #### Which methods are defined in an iterator class?
 
+
+
+### Programming Question
+
 ```python
 class A:
     x = 0
@@ -68,8 +72,10 @@ a2.display()
 print(A.x)
 ```
 
-### Answer
+#### Answer
 Will print out an error.
+
+### Programming Question
 
 ```python
 
@@ -94,8 +100,7 @@ def f1():
 f1()
 ```
 
-
-### Answer
+#### Answer
 
 ```python
 
@@ -104,6 +109,7 @@ A(x: 12, y: 3)
 
 ```
 
+### Programming Question
 ```python
 class class1:
     a = 1
@@ -119,7 +125,7 @@ class1().f1()
 
 ```
 
-### Answer
+#### Answer
 
 ```txt
 2 2 3 2
@@ -160,7 +166,9 @@ mo.groupdict()
 
 mo.groups()
 
+#### Python DB
 
+![Python Databases](https://github.com/navkar/Python3/blob/master/images/Working_with_Databases_Card8.jpeg)
 
 
 

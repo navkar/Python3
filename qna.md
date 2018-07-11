@@ -137,12 +137,12 @@ Moves the current file position to a different location at a defined offset.
 
 #### What does the match method of re module do?
 
-it matches the pattern at any position of the string
+It matches a pattern at the start of the string
 
 
 #### What is the output of the expression re.split(r'[aeiou]', 'abcdefghij')?
 
-['abcd', 'efgh', 'ij']
+['', 'bcd', 'fgh', 'j']
 
 #### In a match found by a defined pattern, how to group various portions of a match
 
@@ -150,7 +150,7 @@ Using square brackets, []
 
 #### Which of the following expression is used to compile the pattern p?
 
-re.regex(p)
+re.compile(p)
 
 #### Which of the following methods of a match object, mo, is used to view the named group portions of match in the form of a dictionary
 

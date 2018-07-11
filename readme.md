@@ -49,14 +49,10 @@ In this case \_\_name\_\_ is foo, the code section does not execute and will not
 
 * [how-to-import-modules-in-python](https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3)
 
-### Operator overloading
-[Operator overloading](http://thepythonguru.com/python-operator-overloading/)
-
 ### executed directly : 
 ```python
 python foo.py
 ```
-
 * When it is executed directly, \_\_name\_\_ is same as \_\_main\_\_ and the code in that section executes and prints XXXX
 * One can write various unit tests within the same module.
 
@@ -263,4 +259,5 @@ print ExampleSibling.__mro__
 
 In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty. With pass, we indicate a "null" block. Pass can be placed on the same line, or on a separate line. Pass can be used to quickly add things that are unimplemented.
 
-
+### Operator overloading
+[Operator overloading](http://thepythonguru.com/python-operator-overloading/)

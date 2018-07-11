@@ -1,13 +1,22 @@
+
+## Questions and Answers
+
+### Python Programming
+
 #### Any Python Script can act like a Module. State if the statement is True or False?
+
 true
 
 #### Which of the following modules are used to deal with Data compression and archiving?
+
 All
 
 #### Which of the following methods of 'random' module is used to pick a single element, randomly, from a given list of elements?
+
 Choice
 
 #### Which of the following statement retreives names of all builtin objects?
+
 import builtins; builtins.__dict__.keys()
 
 #### Which of the following is not a way to import the module 'm1' or the functions 'f1' and 'f2' defined in it?
@@ -16,8 +25,8 @@ import builtins; builtins.__dict__.keys()
 import f1, f2 from m1
 ```
 
-
 #### In Python, which of the following files is mandatory to treat a folder as a package?
+
 ```
 __init.py__
 ```
@@ -33,7 +42,7 @@ yield
 
 #### Which methods are defined in an iterator class?
 
-```
+```python
 class A:
     x = 0
 
@@ -59,10 +68,11 @@ a2.display()
 print(A.x)
 ```
 
-Error
-
+### Answer
+Will print out an error.
 
 ```python
+
 class A:
     def __init__(self, x=5, y=4):
         self.x = x
@@ -84,10 +94,17 @@ def f1():
 f1()
 ```
 
+
+### Answer
+
+```python
+
 False
 A(x: 12, y: 3)
 
 ```
+
+```python
 class class1:
     a = 1
 
@@ -99,9 +116,50 @@ class class1:
 
 class1().f1()
 class1().f1()
+
 ```
 
+### Answer
+
+```txt
 2 2 3 2
+```
+
+#### What does seek method of a file object do?
+
+Moves the current file position to a different location at a defined offset.
+
+#### Which of the following syntax is used to name a grouped portion of a match?
+
+?P<group_name>
+
+[Match Objects](https://docs.python.org/2.0/lib/match-objects.html)
+
+#### What does the match method of re module do?
+
+it matches the pattern at any position of the string
+
+
+#### What is the output of the expression re.split(r'[aeiou]', 'abcdefghij')?
+
+['abcd', 'efgh', 'ij']
+
+#### In a match found by a defined pattern, how to group various portions of a match
+
+Using square brackets, []
+
+#### Which of the following expression is used to compile the pattern p?
+
+re.regex(p)
+
+#### Which of the following methods of a match object, mo, is used to view the named group portions of match in the form of a dictionary
+
+mo.groupdict()
+
+#### Which of the following methods of a match object, mo, is used to view the grouped portions of match in the form of a tuple
+
+mo.groups()
+
 
 
 

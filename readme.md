@@ -45,8 +45,12 @@ File foo.py can be used in the following two ways...
 ```python
 import foo
 ```
-
 In this case \_\_name\_\_ is foo, the code section does not execute and will not print XXXX.
+
+* [how-to-import-modules-in-python](https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3)
+
+### Operator overloading
+[Operator overloading](http://thepythonguru.com/python-operator-overloading/)
 
 ### executed directly : 
 ```python

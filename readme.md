@@ -108,6 +108,9 @@ x = [6, 3, 1]
 g = (i**2 for i in x)  # generator expression
 print(next(g))         # -> 36
 ```
+### Generator functions
+
+[improve-your-python-yield-and-generators](https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
 
 ## What does \_\_init\_\_ do?
 
@@ -128,18 +131,18 @@ p1 = Person('George', 'Smith')
 print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
 ```
 
-## Which of the following statement retreives names of all builtin module names?
+### Which of the following statement retreives names of all builtin module names?
 
 * The compiled-in module names are in **sys.builtin_module_names**
+
+### Which of the following statement retreives names of all builtin objects?
+
+* A dictionary of key value pairs: \_\_builtins\_\_.\_\_dict\_\_, Only the objects: \_\_builtins\_\_.\_\_dict\_\_.values()
 
 ## What does \_\_doc\_\_ do?
 
 * Each class or a method definition can have an optional first line, known as docstring.
 * Once documented, you can load the script into an interactive interpreter and run help command on Person class.
-
-## Generator functions
-
-[improve-your-python-yield-and-generators](https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
 
 ## Inheritance
 

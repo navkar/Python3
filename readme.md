@@ -112,7 +112,7 @@ print(next(g))         # -> 36
 
 [improve-your-python-yield-and-generators](https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
 
-## What does \_\_init\_\_ do?
+### What does \_\_init\_\_ do?
 
 * Set multiple attributes, at once, by defining the initializer method, \_\_init\_\_ , inside the class.
 * This method is called by default, during an object creation.
@@ -137,14 +137,15 @@ print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
 
 ### Which of the following statement retreives names of all builtin objects?
 
-* A dictionary of key value pairs: \_\_builtins\_\_.\_\_dict\_\_, Only the objects: \_\_builtins\_\_.\_\_dict\_\_.values()
+* A dictionary of key-value pairs: \_\_builtins\_\_.\_\_dict\_\_
+* The objects: \_\_builtins\_\_.\_\_dict\_\_.values()
 
-## What does \_\_doc\_\_ do?
+### What does \_\_doc\_\_ do?
 
 * Each class or a method definition can have an optional first line, known as docstring.
 * Once documented, you can load the script into an interactive interpreter and run help command on Person class.
 
-## Inheritance
+### Inheritance
 
 * In Python, every class uses inheritance and is inherited from **object** by default.
 
@@ -166,7 +167,7 @@ class Employee(Person):
 
 * In above example, Employee class utilises \_\_init\_\_ method of parent class Person, to create the object.
 
-## Metaclass in python
+### Metaclass in python
 
 [metaclasses-in-python](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
 
@@ -254,7 +255,7 @@ print ExampleSibling
 print ExampleSibling.__mro__
 ```
 
-## pass keyword
+### pass keyword
 
 In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty. With pass, we indicate a "null" block. Pass can be placed on the same line, or on a separate line. Pass can be used to quickly add things that are unimplemented.
 

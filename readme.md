@@ -5,6 +5,7 @@
 
 ## Python reference
 
+* [Interactive Python Study](http://composingprograms.com/pages/11-getting-started.html#programming-in-python)
 * [Python Language Reference](https://docs.python.org/3/tutorial/classes.html)
 * [Python JSON Reference](https://docs.python.org/3/library/json.html)
 * [NumPy reference](https://docs.scipy.org/doc/numpy/reference/)

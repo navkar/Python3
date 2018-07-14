@@ -130,7 +130,7 @@ print(e1.empname) #Raises 'AttributeError'
 
 * Descriptors can also be created with property decorators.
 * While using property decorators, an attribute's get method will be same as its name and will be decorated with property.
-* In a case of defining any set or delete methods, they will be decorated with respective setter and deleter methods.
+* In a case of defining any set or `delete` methods, they will be decorated with respective `setter` and `deleter` methods.
 
 ```python
 class Employee:
@@ -144,7 +144,6 @@ class Employee:
         return self.__empid
 
     @empid.setter
-
     def empid(self, value):
         if not isinstance(value, int):
             raise TypeError("'empid' must be an integer.")
@@ -155,7 +154,6 @@ class Employee:
         return self.__empname
 
     @empname.setter
-
     def empname(self, value):
     if not isinstance(value, str):
         raise TypeError("'empname' must be a string.")

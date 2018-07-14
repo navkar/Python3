@@ -3,7 +3,7 @@
 * Python descriptors allow a programmer to create managed attributes.
 * In other object-oriented languages, you will find getter and setter methods to manage attributes.
 * However, Python allows a programmer to manage the attributes simply with the attribute name, without losing their protection.
-* This is achieved by defining a descriptor class, that implements any of **\_\_get\_\\_, \_\_set\_\_, \_\_delete\_\_** methods.
+* This is achieved by defining a `descriptor` class, that implements any of **\_\_get\_\_, \_\_set\_\_, \_\_delete\_\_** methods.
 
 ```python
 class EmpNameDescriptor:

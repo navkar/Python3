@@ -5,6 +5,7 @@
 
 ## Python reference
 
+* [modeanalytics-python-basics](https://community.modeanalytics.com/python/tutorial/python-basics/)
 * [Interactive Python Study](http://composingprograms.com/pages/11-getting-started.html#programming-in-python)
 * [Python Language Reference](https://docs.python.org/3/tutorial/classes.html)
 * [Python JSON Reference](https://docs.python.org/3/library/json.html)

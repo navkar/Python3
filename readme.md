@@ -17,6 +17,9 @@
 * [Python variables as pointers](http://scottlobdell.me/2013/08/understanding-python-variables-as-pointers/)
 * [USGS Json](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 
+## Functional Programming with Python
+
+* [learn-functional-python-in-10-minutes](https://hackernoon.com/learn-functional-python-in-10-minutes-to-2d1651dece6f)
 
 ```bash
 Naveens-MacBook-Pro:~ navkar$ python3

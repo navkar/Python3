@@ -29,6 +29,14 @@ Output
     Row2    3    4
 ```
 
+#### Example 1: DataFrames from CSV files
+
+```python
+import pandas as pd
+users = pd.read_csv('datasets/users.csv', index_col=0)
+print(users)
+```
+
 #### Example 2: Creating DataFrames from different data structures
 
 ```python

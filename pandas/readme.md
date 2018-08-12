@@ -148,6 +148,8 @@ Output
 
 So the term broadcasting comes from numpy, simply put it explains the rules of the output that will result when you perform operations between n-dimensional arrays (could be panels, dataframes, series) or scalar values.
 
+> In order to broadcast, the size of the trailing axes for both arrays in an operation must either be the same size or one of them must be one.
+
 ```python
 In [6]:    
 df = pd.DataFrame({'a':np.random.randn(4), 'b':np.random.randn(4)})
@@ -189,4 +191,10 @@ print(results)
 3    45.6   M
 4    34.5   M
 ```
+
+## Links
+
+[what-does-the-term-broadcasting-mean-in-pandas-documentation](https://stackoverflow.com/questions/29954263/what-does-the-term-broadcasting-mean-in-pandas-documentation)
+
+
 

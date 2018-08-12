@@ -94,13 +94,9 @@ Output
 ```bash
 <script.py> output:
     (2, 3)
-    RangeIndex(start=0, stop=2, step=1)
-
-<script.py> output:
-    (2, 3)
     2
-
 ```
+
 
 
 

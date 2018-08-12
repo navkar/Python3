@@ -71,7 +71,9 @@ Output
     United States   Washington
 ```
 
-After you have created your DataFrame, you might want to know a little bit more about it. You can use the shape property or the len() function in combination with the .index property:
+### DataFrame properties
+
+After you have created your DataFrame, you might want to know a little bit more about it. You can use the `shape` property or the `len()` function in combination with the `.index` property:
 
 ```python
 df = pd.DataFrame(np.array([[1, 2, 3], [4, 5, 6]]))

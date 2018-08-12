@@ -79,6 +79,45 @@ Output
     United States   Washington
 ```
 
+#### Example 3: Create a dataframe from a dictionary
+
+```python
+import pandas as pd
+import numpy as np
+
+cities = ['Austin', 'Dallas', 'Austin', 'Dallas']
+signups = [7, 12, 3, 5]
+visitors = [139, 237, 326, 456]
+weekdays = ['Sunday', 'Sunday', 'Monday', 'Monday']
+list_labels = ['city', 'signups', 'visitors', 'weekday']
+list_cols = [cities, signups, visitors, weekdays]
+
+zipped =  list(zip(list_labels, list_cols))
+
+print("zipped...")
+print(zipped)
+
+data = dict(zipped)
+users = pd.DataFrame(data)
+print("---- Data frame ---")
+print(users)
+print("---- Data frame ---")
+```
+#### Output
+
+```bash
+zipped...
+[('city', ['Austin', 'Dallas', 'Austin', 'Dallas']), ('signups', [7, 12, 3, 5]), ('visitors', [139, 237, 326, 456]), ('weekday', ['Sunday', 'Sunday', 'Monday', 'Monday'])]
+---- Data frame ---
+     city  signups  visitors weekday
+0  Austin        7       139  Sunday
+1  Dallas       12       237  Sunday
+2  Austin        3       326  Monday
+3  Dallas        5       456  Monday
+---- Data frame ---
+```
+
+
 ### DataFrame properties
 
 After you have created your DataFrame, you might want to know a little bit more about it. You can use the `shape` property or the `len()` function in combination with the `.index` property:

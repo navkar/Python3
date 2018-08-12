@@ -11,18 +11,24 @@ Successfully installed numpy-1.15.0
 
 ## NumPy Subsetting
 
+numpy list is different from regular python list
+
+#### To subset both regular Python lists and numpy arrays, you can use square brackets:
+
 ```python
-# Create list baseball
-baseball = [180, 215, 210, 210, 188, 176, 209, 200]
+    x = [4 , 9 , 6, 3, 1]
+    x[1]
+```    
 
-# Import the numpy package as np
-import numpy as np
+#### For numpy specifically, you can also use boolean numpy arrays:
 
-# Create a numpy array from baseball: np_baseball
-np_baseball = np.array(baseball)
+```python    
+    import numpy as np
+    y = np.array(x)
+    y[1]
 
-# Print out type of np_baseball
-print(type(np_baseball))
 
-<class 'numpy.ndarray'>
+    high = y > 5
+    y[high]
+
 ```

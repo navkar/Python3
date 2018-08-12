@@ -85,6 +85,10 @@ print(df.shape)
 print(len(df.index))
 ```
 
+The shape property will give you the dimensions of your DataFrame. That means that you will get to know the width and the height of your DataFrame. 
+
+On the other hand, the len() function, in combination with the index property, will only give you information on the height of your DataFrame.
+
 Output
 
 ```bash

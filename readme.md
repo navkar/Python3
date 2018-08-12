@@ -81,28 +81,6 @@ fruits = ['apple', 'mango', 'kiwi', 'watermelon', 'pear']
 find_apple = [item for item in list if item.startswith('a')]
 ```
 
-#### Magic command %save - saves the previous list of commands in a file
-
-```python
-%save sample_script.py 1-6
-```
-
-#### Magic command %more - view the contents of a file
-
-```python
-%show sample_script.py
-```
-
-#### Magic command %hist - history of commands
-
-```python
-%hist
-```
-
-### What is the input of a cell magic method ?
-
-+ Python code written in multiple lines of a single cell.
-
 ### Generator Expression
 
 * A Generator object is an iterator, whose values are created at the time of accessing them.
@@ -113,6 +91,7 @@ x = [6, 3, 1]
 g = (i**2 for i in x)  # generator expression
 print(next(g))         # -> 36
 ```
+
 ### Generator functions
 
 [improve-your-python-yield-and-generators](https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/)
@@ -136,20 +115,6 @@ p1 = Person('George', 'Smith')
 print(p1.fname, '-', p1.lname)           # -> 'George - Smith'
 ```
 
-### Which of the following statement retreives names of all builtin module names?
-
-* The compiled-in module names are in **sys.builtin_module_names**
-
-### Which of the following statement retreives names of all builtin objects?
-
-* A dictionary of key-value pairs: \_\_builtins\_\_.\_\_dict\_\_
-* The objects: \_\_builtins\_\_.\_\_dict\_\_.values()
-
-### What does \_\_doc\_\_ do?
-
-* Each class or a method definition can have an optional first line, known as docstring.
-* Once documented, you can load the script into an interactive interpreter and run help command on Person class.
-
 ### Inheritance
 
 * In Python, every class uses inheritance and is inherited from **object** by default.
@@ -171,6 +136,50 @@ class Employee(Person):
 ```
 
 * In above example, Employee class utilises \_\_init\_\_ method of parent class Person, to create the object.
+
+#### Magic command %save - saves the previous list of commands in a file
+
+```python
+%save sample_script.py 1-6
+```
+
+#### Magic command %more - view the contents of a file
+
+```python
+%show sample_script.py
+```
+
+#### Magic command %hist - history of commands
+
+```python
+%hist
+```
+
+### What is the input of a cell magic method ?
+
++ Python code written in multiple lines of a single cell.
+
+
+### Which of the following statement retreives names of all builtin module names?
+
+* The compiled-in module names are in **sys.builtin_module_names**
+
+### Which of the following statement retreives names of all builtin objects?
+
+* A dictionary of key-value pairs: \_\_builtins\_\_.\_\_dict\_\_
+* The objects: \_\_builtins\_\_.\_\_dict\_\_.values()
+
+### What does \_\_doc\_\_ do?
+
+* Each class or a method definition can have an optional first line, known as docstring.
+* Once documented, you can load the script into an interactive interpreter and run help command on Person class.
+
+### pass keyword
+
+In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty. With pass, we indicate a "null" block. Pass can be placed on the same line, or on a separate line. Pass can be used to quickly add things that are unimplemented.
+
+### Operator overloading
+[Operator overloading](http://thepythonguru.com/python-operator-overloading/)
 
 ### Metaclass in python
 
@@ -259,10 +268,3 @@ ExampleSibling = Example + Sibling
 print ExampleSibling
 print ExampleSibling.__mro__
 ```
-
-### pass keyword
-
-In Python we use the "pass" keyword (a statement) to indicate that nothing happens—the function, class or loop is empty. With pass, we indicate a "null" block. Pass can be placed on the same line, or on a separate line. Pass can be used to quickly add things that are unimplemented.
-
-### Operator overloading
-[Operator overloading](http://thepythonguru.com/python-operator-overloading/)

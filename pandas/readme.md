@@ -144,6 +144,41 @@ Output
     2
 ```
 
+### Broadcasting with a dictionary
 
+So the term broadcasting comes from numpy, simply put it explains the rules of the output that will result when you perform operations between n-dimensional arrays (could be panels, dataframes, series) or scalar values.
 
+```python
+In [6]:    
+df = pd.DataFrame({'a':np.random.randn(4), 'b':np.random.randn(4)})
+df
+
+Out[6]:
+          a         b
+0  0.216920  0.652193
+1  0.968969  0.033369
+2  0.637784  0.856836
+3 -2.303556  0.426238
+
+In [7]:    
+df * 10
+
+Out[7]:
+           a         b
+0   2.169204  6.521925
+1   9.689690  0.333695
+2   6.377839  8.568362
+3 -23.035557  4.262381
+```
+
+So what is technically happening here is that the scalar value has been broadcasted along the same `dimensions` of the Series and `DataFrame` above.
+
+```python
+import pandas as pd
+
+heights = [59.0, 65.2, 62.9, 45.6, 34.5]
+data = { 'height': heights, 'sex': 'M'}
+results = pd.DataFrame(data)
+print(results)
+```
 

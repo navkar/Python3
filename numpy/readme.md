@@ -22,14 +22,14 @@ numpy list is different from regular python list
 
 #### For numpy specifically, you can also use boolean numpy arrays:
 
-```python    
+```python
     import numpy as np
     y = np.array(x)
     y[1]
 
     # high is an array of type boolean
     high = y > 5
-    
+    #
     y[high]
 
 ```
@@ -49,3 +49,51 @@ In [1]: np.array([True, 1, 2]) + np.array([3, 4, False])
 Out[1]: array([4, 5, 2])
 
 ```
+
+### NOTE: type `ndarray` - N-dimentional array
+
+
+```python
+import numpy
+
+arr = [[1,3],[2,4],[3,5]]
+
+arr2d = numpy.array(arr)
+
+# prints 2d array
+# [[1 3]
+#  [2 4]
+#  [3 5]]
+print("numpy 2d array")
+print(arr2d[:]) # same as print(arr2d)
+
+print("Row 0")
+print(arr2d[0,:])
+
+# prints row index 1
+# [2 4]
+print("Row 1")
+print(arr2d[1,:])
+
+# prints all elements of the first column
+# [1 2 3]
+print("elements of 1st Column")
+print(arr2d[:,0])
+
+# prints all elements of the second column
+# [3 4 5].
+print("elements of 2nd Column")
+print(arr2d[:,1])
+```
+
+### Average vs Median
+
+It's always a good idea to check both the median and the mean, to get an idea about the overall distribution of the entire dataset.
+
+```python
+import numpy as np
+x = [1, 4, 8, 10, 12]
+np.mean(x)
+np.median(x)
+```
+

@@ -180,5 +180,13 @@ heights = [59.0, 65.2, 62.9, 45.6, 34.5]
 data = { 'height': heights, 'sex': 'M'}
 results = pd.DataFrame(data)
 print(results)
+
+
+   height sex
+0    59.0   M
+1    65.2   M
+2    62.9   M
+3    45.6   M
+4    34.5   M
 ```
 

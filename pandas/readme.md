@@ -92,6 +92,8 @@ weekdays = ['Sunday', 'Sunday', 'Monday', 'Monday']
 list_labels = ['city', 'signups', 'visitors', 'weekday']
 list_cols = [cities, signups, visitors, weekdays]
 
+# Note: The zip() function in Python 3 and above returns a special zip object, which is essentially a generator. 
+# To convert this zip object into a list, you'll need to use list()
 zipped =  list(zip(list_labels, list_cols))
 
 print("zipped...")

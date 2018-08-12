@@ -27,8 +27,19 @@ numpy list is different from regular python list
     y = np.array(x)
     y[1]
 
-
+    # high is an array of type boolean
     high = y > 5
+    
     y[high]
 
 ```
+
+### NumPy Side Effects
+
+numpy is great for doing vector arithmetic. If you compare its functionality with regular Python lists, however, some things have changed.
+
+First of all, numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as type coercion.
+
+Second, the typical arithmetic operators, such as +, -, * and / have a different meaning for regular Python lists and numpy arrays.
+
+

@@ -16,8 +16,11 @@ numpy list is different from regular python list
 #### To subset both regular Python lists and numpy arrays, you can use square brackets:
 
 ```python
-    x = [4 , 9 , 6, 3, 1]
+    x = [4, 9, 6, 3, 1]
     x[1]
+    # range
+    x[1:3] # [start:end] - end is exclusive
+    # [9,6] 
 ```    
 
 #### For numpy specifically, you can also use boolean numpy arrays:
@@ -30,28 +33,13 @@ numpy list is different from regular python list
     # high is an array of type boolean
     high = y > 5
     #
-    y[high]
+    print(y[high])
 
 ```
 
-### NumPy Side Effects
+### 2-D array subsetting using NumPy
 
-numpy is great for doing vector arithmetic. If you compare its functionality with regular Python lists, however, some things have changed.
-
-First of all, numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as type coercion.
-
-Second, the typical arithmetic operators, such as +, -, * and / have a different meaning for regular Python lists and numpy arrays.
-
-```python
-In [1]: np.array([True, 1, 2]) + np.array([3, 4, False])
-
-# NOTE: True is converted to 1, False is converted to 0
-Out[1]: array([4, 5, 2])
-
-```
-
-### NOTE: type `ndarray` - N-dimentional array
-
+NOTE: type `ndarray` stands for `N-dimentional array`
 
 ```python
 import numpy
@@ -85,6 +73,24 @@ print(arr2d[:,0])
 print("elements of 2nd Column")
 print(arr2d[:,1])
 ```
+
+### NumPy Side Effects
+
+numpy is great for doing vector arithmetic. If you compare its functionality with regular Python lists, however, some things have changed.
+
+First of all, numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as type coercion.
+
+Second, the typical arithmetic operators, such as +, -, * and / have a different meaning for regular Python lists and numpy arrays.
+
+```python
+In [1]: np.array([True, 1, 2]) + np.array([3, 4, False])
+
+# NOTE: True is converted to 1, False is converted to 0
+Out[1]: array([4, 5, 2])
+
+```
+
+## Statistics 
 
 ### Average vs Median
 

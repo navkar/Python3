@@ -42,4 +42,10 @@ First of all, numpy arrays cannot contain elements with different types. If you 
 
 Second, the typical arithmetic operators, such as +, -, * and / have a different meaning for regular Python lists and numpy arrays.
 
+```python
+In [1]: np.array([True, 1, 2]) + np.array([3, 4, False])
 
+# NOTE: True is converted to 1, False is converted to 0
+Out[1]: array([4, 5, 2])
+
+```

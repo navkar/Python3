@@ -4,7 +4,7 @@ Three fundamental data structures used in pandas are,
 
 * `Series`: A 1-D array.
 * `Data Frame` : A 2-D array or two or more Series joined together
-* `Panel` : A 3-D array
+* `Panel` : A 3-D array (holds two or more DataFrames together as a single unit.)
 
 ### Pandas - Concept of a DataFrame
 

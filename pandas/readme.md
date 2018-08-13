@@ -1,4 +1,12 @@
-## Pandas - Concept of a DataFrame
+## Pandas
+
+Three fundamental data structures used in pandas are,
+
+* `Series`: A 1-D array.
+* `Data Frame` : A 2-D array or two or more Series joined together
+* `Panel` : A 3-D array
+
+### Pandas - Concept of a DataFrame
 
 Pandas is a popular Python package for data science, and with good reason: it offers powerful, expressive and flexible data structures that make data manipulation and analysis easy, among many other things. The DataFrame is one of these structures.
 

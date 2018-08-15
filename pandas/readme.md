@@ -69,7 +69,18 @@ users = pd.read_csv('datasets/users.csv', index_col=0)
 print(users)
 ```
 
-#### Example 2: Creating DataFrames from different data structures
+#### Example 2: Load DataFrame from URLs
+
+```python
+import pandas as pd
+import urllib
+myUrl = "http://aima.cs.berkeley.edu/data/iris.csv"
+urlRequest = urllib.request.Request(myUrl)
+iris_file = urllib.request.urlopen(urlRequest)
+iris_fromUrl = pd.read_csv(iris_file, sep=',', header=None, decimal='.', names=['sepal_length','sepal_width','petal_length','petal_width','target'])
+```
+
+#### Example 3: Creating DataFrames from different data structures
 
 ```python
 # Take a 2D array as input to your DataFrame 
@@ -111,7 +122,7 @@ Output
     United States   Washington
 ```
 
-#### Example 3: Create a dataframe from a dictionary
+#### Example 4: Create a dataframe from a dictionary
 
 ```python
 import pandas as pd

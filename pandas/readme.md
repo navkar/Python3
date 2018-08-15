@@ -1,14 +1,33 @@
-## Pandas
-
-Three fundamental data structures used in pandas are,
-
-* `Series`: A 1-D array.
-* `Data Frame` : A 2-D array or two or more Series joined together
-* `Panel` : A 3-D array (holds two or more DataFrames together as a single unit.)
-
-### Pandas - Concept of a DataFrame
+## What is Pandas
 
 Pandas is a popular Python package for data science, and with good reason: it offers powerful, expressive and flexible data structures that make data manipulation and analysis easy, among many other things. The DataFrame is one of these structures.
+
+### Pandas - Data structures
+
+There are three fundamental data structures used in pandas.
+
+* `Series`: A 1-D array.
+
+```python
+import pandas as pd
+heights_A = [176.2, 158.4, 167.6, 156.2, 161.4]
+series = pd.Series(heights_A)
+print(series.shape)
+```
+
+
+* `Data Frame` : A 2-D array or two or more Series joined together
+
+* `Panel` : A 3-D array (holds two or more DataFrames together as a single unit.)
+  - The data structure for handling 3-D data is 
+    - items
+    - major_axis
+    - minor_axis
+
+```python
+dictionary = { 'item1' : pd.DataFrame(np.random.randn(4,3)), 'item2' : pd.DataFrame(np.random.randn(4,2))  }
+pd.Panel(dictionary)
+```
 
 ### How To Create a Pandas DataFrame
 

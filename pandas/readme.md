@@ -10,9 +10,8 @@ There are three fundamental data structures used in pandas.
 
 ```python
 import pandas as pd
-heights_A = [176.2, 158.4, 167.6, 156.2, 161.4]
-series = pd.Series(heights_A)
-print(series.shape)
+s = pd.Series([89.2, 76.4, 98.2, 75.9], index=list('abcd'))
+print(s[['c', 'a']])
 ```
 
 * `Data Frame` : A 2-D array or two or more Series joined together
@@ -24,7 +23,7 @@ df = pd.DataFrame(data)
 print(df.shape)
 ```
 
-* `Panel` : A 3-D array (holds two or more DataFrames together as a single unit.)
+* `Panel` : A 3-D array (holds two or more Dataframes together as a single unit.)
   - The data structure for handling 3-D data is 
     - items
     - major_axis

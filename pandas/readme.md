@@ -15,8 +15,14 @@ series = pd.Series(heights_A)
 print(series.shape)
 ```
 
-
 * `Data Frame` : A 2-D array or two or more Series joined together
+
+```python
+import pandas as pd
+data = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}]
+df = pd.DataFrame(data)
+print(df.shape)
+```
 
 * `Panel` : A 3-D array (holds two or more DataFrames together as a single unit.)
   - The data structure for handling 3-D data is 

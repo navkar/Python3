@@ -40,6 +40,34 @@ output:
 
 > The most important ones to remember are, without a doubt, .loc[] and .iloc[].
 
+##### Short example 2
+
+```python
+import pandas as pd
+df = pd.DataFrame({'A':[34, 78, 54], 'B':[12, 67, 43]}, index=['r1', 'r2', 'r3'])
+
+print(df)
+print(df.loc['r1'])
+print(df.iloc[2])
+```
+
+Output
+
+```bash
+     A   B
+r1  34  12
+r2  78  67
+r3  54  43
+
+A    34
+B    12
+Name: r1, dtype: int64
+
+A    54
+B    43
+Name: r3, dtype: int64
+```
+
 #### How do you select rows and columns?
 
 ```python

@@ -190,6 +190,8 @@ Output
 ```
 #### Example: DataFrame shape
 
+**Each series during concatenation becomes a column. A series consists of a single kind of data.**
+
 ```python
 import pandas as pd
 

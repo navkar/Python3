@@ -187,7 +187,9 @@ In Python we use the "pass" keyword (a statement) to indicate that nothing happe
 
 A metaclass is the class of a class. Like a class defines how an instance of the class behaves, a metaclass defines how a class behaves. A class is an instance of a metaclass.
 
-While in Python you can use arbitrary callables for metaclasses (like Jerub shows), the more useful approach is actually to make it an actual class itself. type is the usual metaclass in Python. In case you're wondering, yes, type is itself a class, and it is its own type. You won't be able to recreate something like type purely in Python, but Python cheats a little. To create your own metaclass in Python you really just want to subclass type.
+While in Python you can use arbitrary callables for metaclasses (like Jerub shows), the more useful approach is actually to make it an actual class itself. 
+
+**type** is the usual metaclass in Python. In case you're wondering, yes, type is itself a class, and it is its own type. You won't be able to recreate something like type purely in Python, but Python cheats a little. To create your own metaclass in Python you really just want to subclass **type**.
 
 A metaclass is most commonly used as a class-factory. Like you create an instance of the class by calling the class, Python creates a new class (when it executes the 'class' statement) by calling the metaclass. Combined with the normal __init__ and __new__ methods, metaclasses therefore allow you to do 'extra things' when creating a class, like registering the new class with some registry, or even replace the class with something else entirely.
 
@@ -268,3 +270,22 @@ ExampleSibling = Example + Sibling
 print ExampleSibling
 print ExampleSibling.__mro__
 ```
+
+### What does \_\_future\_\_ do?
+
+Put simply, the \_\_future\_\_ statement forces Python interpreters to use newer features of the language.
+
+\_\_future\_\_ is a pseudo-module which programmers can use to enable new language features which are not compatible with the current interpreter. For example, the expression 11/4 currently evaluates to 2. If the module in which it is executed had enabled true division by executing:
+
+```python
+from __future__ import division
+```
+
+the expression 11/4 would evaluate to 2.75. By importing the \_\_future\_\_ module and evaluating its variables, you can see when a new feature was first added to the language and when it will become the default:
+
+```bash
+  >>> import __future__
+  >>> __future__.division
+  _Feature((2, 2, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 8192)
+```
+

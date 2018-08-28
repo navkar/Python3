@@ -171,8 +171,9 @@ class Employee(Person):
 
 ### What does \_\_doc\_\_ do?
 
+* The print(\_\_doc\_\_) command simply re-uses that documentation string to write it to your terminal each time you run the script, and any other python tool (like the interactive interpreter help() function, for example) can introspect that same value.
 * Each class or a method definition can have an optional first line, known as docstring.
-* Once documented, you can load the script into an interactive interpreter and run help command on Person class.
+* Once documented, you can load the script into an interactive interpreter and run help command on the class.
 
 ### pass keyword
 

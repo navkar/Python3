@@ -1,3 +1,48 @@
+## Property
+
+#### The following code snippet shows setting up properties in Python
+
+```python
+class employee:
+  __name = ""
+
+  def __init__(self, name):
+    self.__name = name
+
+  @property
+  def greeting(self):
+    return "Hi, the name is {}".format(self.name)
+
+  @property
+  def name(self):
+    return self.__name;
+
+  @name.setter
+  def name_setter(self, name):
+    print("-- alert! name changed --")
+    self.__name = name
+  
+if __name__ == "__main__":
+   e = employee("Naveen")
+   print(e.name)
+   print(e.greeting)
+   e.name_setter = "NoName"
+   print(e.greeting)
+```
+
+#### Output
+
+```bash
+Python 3.6.1 (default, Dec 2015, 13:05:11)
+[GCC 4.8.2] on linux
+   
+Naveen
+Hi, the name is Naveen
+-- alert! name changed --
+Hi, the name is NoName
+   
+```
+
 ## Closures and Decorators
 
 ### Closures

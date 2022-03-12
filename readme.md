@@ -297,3 +297,29 @@ the expression 11/4 would evaluate to 2.75. By importing the \_\_future\_\_ modu
   _Feature((2, 2, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 8192)
 ```
 
+Sample code to print squares in a number range
+
+```python
+n=1
+p=20
+
+result=[]
+index=0
+
+for x in range(n,p+1):
+    for y in range(x,p+1):
+        sum = x + y
+        sub = y - x
+        #print ("x="+ str(x) + " y=" + str(y) + " x+y=" + str(sum))
+        #print ("y="+ str(y) + " x=" + str(x) + " y-x=" + str(sub))
+        x1 = sum**0.5
+        x2 = sub**0.5
+        temp1 = int(x1)
+        temp2 = int(x2)
+        if x1 == temp1 and x2 == temp2 and not (x == y):
+            result.append((x,y))
+
+print ("Pairs: " + str(result))
+
+```
+
